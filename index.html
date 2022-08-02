@@ -4,162 +4,13 @@
 	<title>Website for M.H. Petersen</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./static/stylesheet.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<style>
-	body {
-		font: 400 15px/1.8 Lato, sans-serif;
-		color: #777;
-	}
-	h3, h4 {
-		margin: 10px 0 30px 0;
-		letter-spacing: 10px;      
-		font-size: 20px;
-		color: #111;
-	}
-	.container {
-		padding: 80px 120px;
-	}
-	.person {
-		border: 10px solid transparent;
-		margin-bottom: 25px;
-		width: 80%;
-		height: 80%;
-		opacity: 0.7;
-	}
-	.person:hover {
-		border-color: #f1f1f1;
-	}
-	.carousel-inner img {
-		-webkit-filter: grayscale(90%);
-		filter: grayscale(90%); /* make all photos black and white */ 
-		width: 100%; /* Set width to 100% */
-		margin: auto;
-	}
-	.carousel-caption h3 {
-		color: #fff !important;
-	}
-	@media (max-width: 600px) {
-	.carousel-caption {
-		display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-	}
-	}
-	.bg-1 {
-		background: #2d2d30;
-		color: #bdbdbd;
-	}
-	.bg-1 h3 {color: #fff;}
-	.panel-title {
-		color: #333 !important;
-		text-align: center;
-		font-size: 15px;
-	}
-	.panel-body {
-		color: #333 !important;
-		text-align: center;
-	}
-	.bg-1 p {font-style: italic;}
-	.list-group-item:first-child {
-		border-top-right-radius: 0;
-		border-top-left-radius: 0;
-	}
-	.list-group-item:last-child {
-		border-bottom-right-radius: 0;
-		border-bottom-left-radius: 0;
-	}
-	.thumbnail {
-		padding: 0 0 15px 0;
-		border: none;
-		border-radius: 0;
-	}
-	.thumbnail p {
-		margin-top: 15px;
-		color: #555;
-	}
-	.btn {
-		padding: 10px 20px;
-		background-color: #333;
-		color: #f1f1f1;
-		border-radius: 0;
-		transition: .2s;
-	}
-	.btn:hover, .btn:focus {
-		border: 1px solid #333;
-		background-color: #fff;
-		color: #000;
-	}
-	.modal-header, .close {
-		background-color: #333;
-		color: #fff !important;
-		text-align: center;
-		font-size: 30px;
-	}
-	.modal-header, .modal-body {
-		padding: 40px 50px;
-	}
-	.nav-tabs li a {
-		color: #777;
-	}
-	#googleMap {
-		width: 100%;
-		height: 400px;
-		-webkit-filter: grayscale(100%);
-		filter: grayscale(100%);
-	}  
-	.navbar {
-		font-family: Montserrat, sans-serif;
-		margin-bottom: 0;
-		background-color: #2d2d30;
-		border: 0;
-		font-size: 11px !important;
-		letter-spacing: 4px;
-		opacity: 0.9;
-	}
-	.navbar li a, .navbar .navbar-brand { 
-		color: #d5d5d5 !important;
-	}
-	.navbar-nav li a:hover {
-		color: #fff !important;
-	}
-	.navbar-nav li.active a {
-		color: #fff !important;
-		background-color: #29292c !important;
-	}
-	.navbar-default .navbar-toggle {
-		border-color: transparent;
-	}
-	.open .dropdown-toggle {
-		color: #fff;
-		background-color: #555 !important;
-	}
-	.dropdown-menu li a {
-		color: #000 !important;
-	}
-	.dropdown-menu li a:hover {
-		background-color: red !important;
-	}
-	footer {
-		background-color: #2d2d30;
-		color: #f5f5f5;
-		padding: 32px;
-	}
-	footer a {
-		color: #f5f5f5;
-	}
-	footer a:hover {
-		color: #777;
-		text-decoration: none;
-	}  
-	.form-control {
-		border-radius: 0;
-	}
-	textarea {
-		resize: none;
-	}
-	</style>
+	<script type="text/javascript" src="./static/script.js"></script>
 </head>
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -233,7 +84,7 @@
 <!-- Container (The Education Section) -->
 <div id="education" class="container text-center">
 	<h3>EDUCATION</h3>
-	<p><em>Specialized in Generative models (ie. VAE's and GAN's)</em></p>
+	<p><em>Specialized in Generative models (ie. VAE's and GAN's) and Bilingual Question Answering models (eg. BERT on multiple languages)</em></p>
 	<p>I have taken many courses in Deep Learning and Machine Learning (examples are <a href="http://kurser.dtu.dk/course/02456">Deep learning</a> and <a href="http://kurser.dtu.dk/course/02460">Advanced Machine Learning</a>)</p>
 	<br>
 	<div class="row">
@@ -244,9 +95,9 @@
 		</a>
 		<div id="msc" class="collapse in">
 		<p>Technical University of Denmark</p>
-		<p>Sep 2017 - Now</p>
+		<p>Sep 2017 - Aug 2019</p>
 		<p>Focus area: Machine learning and signal-processing</p>
-		<p>Final grade: ?</p>
+		<p>Final grade: 10</p>
 		</div>
 	</div>
 	<div class="col-sm-4">
@@ -284,45 +135,65 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="#novozymes">
-						Student programmer at Novozymes</a>
+						<a data-toggle="collapse" data-parent="#accordion" href="#netcompany">
+							Senior Data Architect - Netcompany
+						</a>
 					</h4>
 				</div>
-				<div id="novozymes" class="panel-collapse collapse in">
-					<div class="panel-body">Dec 2017 - Now<br>Maintain and develop webservers and websites. Develop pages for collecting and process data.<br><i>I have created some websites for as part of a project I'm responsible for. Some of these sites is used for registration of some tasks that must be performed. These sites has also been extended with performance overview pages, some admin pages and much more.</i></div>
+				<div id="netcompany" class="panel-collapse collapse in">
+					<div class="panel-body">Dec 2017 - Now<br>
+						<i>
+							I currently work as a senior tech lead on a migration project with ETL tools such as SSIS, SQL, C#, PowerShell, Shell and PowerBI. I am responsible for the overall architecture as well as any technical deliveries. Additionally I worked on a machine learning project that consisted of scanning letters and processing the text in multiple European languages. This was done using Python and tools such as Spacy, NLTK, Scikit-Learn, Pandas, Numpy, Matplotlib and Dask. 
+						</i>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#novozymes">
+							Software developer - Novozymes
+						</a>
+					</h4>
+				</div>
+				<div id="novozymes" class="panel-collapse collapse">
+					<div class="panel-body">Dec 2017 - Aug 2019<br>
+						<i>
+							I created some websites as part of the project I was responsible for in PHP and JavaScript. The sites was used for registration of samples that should be collected. I worked mostly with Python, PHP and JavaScript.
+						</i>
+					</div>
 				</div>
 			</div>
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
 						<a data-toggle="collapse" data-parent="#accordion" href="#moltwengel">
-						Consultant at Molt Wengel</a>
+							Consultant at Molt Wengel
+						</a>
 					</h4>
 				</div>
 				<div id="moltwengel" class="panel-collapse collapse">
-					<div class="panel-body">Aug 2017 - Dec 2017<br>Creation of website and data-collection.<br><i>I can't really state precisely what I did since I have signed a privacy policy but I can say that I created some webserver for collecting some data and processing it.</i></div>
+					<div class="panel-body">Aug 2017 - Dec 2017<br>
+						<i>
+							I created a webserver that automatically collected data using a webcrawler and stored it in a NoSQL database which I have used to create a search engine using Apache Solr combined with Python.
+						</i>
+					</div>
 				</div>
 			</div>
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
 						<a data-toggle="collapse" data-parent="#accordion" href="#elgiganten">
-						Aftersales at Elgiganten</a>
+							IT Consultant - Action Cards
+						</a>
 					</h4>
 				</div>
 				<div id="elgiganten" class="panel-collapse collapse">
-					<div class="panel-body">Mar 2013 - Dec 2017<br>Customer-service and logistics.<br><i>In logistics I do some cleanup and decides where to put the items. In service I take care of the customers and make sure that all customer cases are handled. In aftersales I recieve customers and take care of warranty cases.</i></div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="#jupiter">
-						Student helper at Jupiter Cykler</a>
-					</h4>
-				</div>
-				<div id="jupiter" class="panel-collapse collapse">
-					<div class="panel-body">Dec 2009 - Mar 2013<br>Customer service and logistics-planning.<br><i>Main assignments: assembly of bikes, serving customers and planning the logistics.</i></div>
+					<div class="panel-body">Apr 2017 - Jun 2017<br>
+						<i>
+							I created a MySQL database and a webserver in Python that handled registrered QR-codes when they were scanned. The registered information was stored in the database for further processing and reporting.
+						</i>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -336,7 +207,9 @@
 	<br>
 	<div class="row">
 		<div class="list-group">
+			<a href="https://github.com/mhattingpete/Python_Chatbot" class="list-group-item">Chatbot using transformer models</a>
 			<a href="https://github.com/mhattingpete/GenerativeAdversarialNetworks" class="list-group-item">GenerativeAdversarialNetworks both for images and text</a>
+			<a href="https://github.com/mhattingpete/numalgo" class="list-group-item">Numerical approximation algorithms in Go</a>
 			<a href="https://github.com/mhattingpete/VAE_text" class="list-group-item">Variational Autoencoders for text</a>
 			<a href="https://github.com/mhattingpete/CapsuleNets" class="list-group-item">Capsule Networks</a>
 			<a href="https://github.com/mhattingpete/02443_Stochastic_Simulation_Project" class="list-group-item">Stochastic Simulation Project</a>
@@ -354,7 +227,7 @@
 	<div class="col-md-4">
 		<p><span class="glyphicon glyphicon-map-marker"></span>Copenhagen, DK</p>
 		<p><span class="glyphicon glyphicon-phone"></span>Phone: +45 29906616</p>
-		<p><span class="glyphicon glyphicon-envelope"></span>Email: petersen2630@gmail.com</p>
+		<p><span class="glyphicon glyphicon-envelope"></span>Email: <a href="mailto:petersen2630@gmail.com">petersen2630@gmail.com</a></p>
 		<p><img src="linkedin_logo.svg" alt="Linkedin" width="25" height="25"><a href="https://dk.linkedin.com/in/martin-hatting-petersen-7a7047b4">Link to profile</a></p>
 		<p><img src="github_icons/GitHub-Mark-32px.png" alt="Github" width="25" height="25"><a href="https://github.com/mhattingpete/">Link to profile</a></p>
 	</div>
@@ -381,53 +254,5 @@
 	<span class="glyphicon glyphicon-chevron-up"></span>
 	</a><br><br>
 </footer>
-
-<script>
-$(document).ready(function(){
-	$("#contact_submit").on('click',function(event) {
-		var name = document.getElementById("name").value;
-		var content = document.getElementById("content").value;
-		if(name == ""){
-			alert("The name field is not filled! Please do first.");
-			event.preventDefault();
-		} else {
-			sendMail(name,content);
-		}
-	});
-	// Initialize Tooltip
-	$('[data-toggle="tooltip"]').tooltip();
-	
-	// Add smooth scrolling to all links in navbar + footer link
-	$(".navbar a, footer a[href='#home']").on('click', function(event) {
-
-	// Make sure this.hash has a value before overriding default behavior
-	if (this.hash !== "") {
-
-		// Prevent default anchor click behavior
-		event.preventDefault();
-
-		// Store hash
-		var hash = this.hash;
-
-		// Using jQuery's animate() method to add smooth page scroll
-		// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-		$('html, body').animate({
-		scrollTop: $(hash).offset().top
-		}, 900, function(){
-	 
-		// Add hash (#) to URL when done scrolling (default click behavior)
-		//window.location.hash = hash;
-		});
-	} // End if
-	});
-})
-function sendMail(name,content) {
-    var link = "mailto:petersen2630@gmail.com"
-             + "&subject=" + escape("Contact through website from: "+name)
-             + "&body=" + escape(content);
-    window.location.href = link;
-}
-</script>
-
 </body>
 </html>
