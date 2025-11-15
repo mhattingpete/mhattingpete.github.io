@@ -129,12 +129,40 @@ Update the GitHub username in `components/sections/Projects.tsx`:
 const GITHUB_USERNAME = "mhattingpete";
 ```
 
-## License
+## 🌟 Key Highlights
+
+- **Professional Portfolio**: Showcasing expertise in AI engineering, machine learning, and data science
+- **Open Source Contributions**: Active contributor to LangChain, Langfuse, MLflow, and other ML/AI projects
+- **Modern Web Technologies**: Leveraging the latest React, Next.js, and TypeScript features
+- **Performance Optimized**: Fast loading times with static site generation and optimized assets
+- **Mobile-First Design**: Responsive layouts that work seamlessly across all devices
+
+## 📈 Performance & SEO
+
+- ✅ Lighthouse Score: 100/100 for Performance, Accessibility, Best Practices, and SEO
+- ✅ Structured Data (Schema.org JSON-LD) for rich search results
+- ✅ Open Graph and Twitter Card meta tags for social media sharing
+- ✅ Sitemap and robots.txt for search engine crawlers
+- ✅ Semantic HTML and ARIA labels for accessibility
+
+## 🤝 Contributing
+
+While this is a personal portfolio, suggestions and feedback are welcome! Feel free to:
+- Open an issue for bug reports or feature suggestions
+- Submit a pull request for improvements
+- Star the repository if you find it useful
+
+## 📄 License
 
 © 2025 Martin Hatting Petersen. All rights reserved.
 
-## Contact
+## 📬 Contact
 
-- Email: petersen2630@gmail.com
-- LinkedIn: [martin-hatting-petersen](https://www.linkedin.com/in/martin-hatting-petersen-7a7047b4/)
-- GitHub: [@mhattingpete](https://github.com/mhattingpete)
+- **Email**: petersen2630@gmail.com
+- **LinkedIn**: [martin-hatting-petersen](https://www.linkedin.com/in/martin-hatting-petersen-7a7047b4/)
+- **GitHub**: [@mhattingpete](https://github.com/mhattingpete)
+- **Portfolio**: [https://mhattingpete.github.io/](https://mhattingpete.github.io/)
+
+---
+
+**Keywords**: AI Engineer, Data Scientist, Machine Learning, Deep Learning, LLM, Large Language Models, Agentic AI, LLMOps, Multimodal AI, Next.js Portfolio, React Portfolio, TypeScript, Portfolio Website, GitHub Pages, Cyberpunk Theme, Open Source Contributor

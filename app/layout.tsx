@@ -37,11 +37,14 @@ export const metadata: Metadata = {
     siteName: "Martin Hatting Petersen Portfolio",
     type: "website",
     locale: "en_US",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Martin Hatting Petersen | AI Engineer & Data Scientist",
-    description: "Senior Data Scientist specializing in agentic AI systems, LLMOps, and multimodal AI.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Martin Hatting Petersen - AI Engineer & Data Scientist",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -61,8 +64,42 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Martin Hatting Petersen",
+    url: "https://mhattingpete.github.io",
+    jobTitle: "AI Engineer & Data Scientist",
+    description:
+      "Senior Data Scientist specializing in agentic AI systems, LLMOps, and multimodal AI",
+    knowsAbout: [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Large Language Models",
+      "Agentic Systems",
+      "LLMOps",
+      "Multimodal AI",
+      "Deep Learning",
+      "Natural Language Processing",
+    ],
+    sameAs: [
+      "https://github.com/mhattingpete",
+      "https://www.linkedin.com/in/martin-hatting-petersen-7a7047b4/",
+    ],
+    alumniOf: {
+      "@type": "EducationalOrganization",
+      name: "Technical University of Denmark",
+    },
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
