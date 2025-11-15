@@ -65,7 +65,7 @@ Visit [http://localhost:3000](http://localhost:3000) to see the site in developm
 
 ## Deployment
 
-This site is configured to deploy automatically to GitHub Pages using GitHub Actions. Every push to the `master` branch triggers a new deployment.
+This site is configured to deploy automatically to GitHub Pages using GitHub Actions. Every push to the `main` branch triggers a new deployment.
 
 ### Manual Deployment
 
