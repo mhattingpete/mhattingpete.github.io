@@ -148,7 +148,7 @@ export default function Hero() {
           </div>
 
           <motion.p
-            className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto"
+            className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -160,10 +160,27 @@ export default function Hero() {
           </motion.p>
 
           <motion.div
+            className="mb-12 flex justify-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+          >
+            <a
+              href="https://github.com/mhattingpete/mhattingpete.github.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-neon-cyan transition-colors group"
+            >
+              <FaGithub className="text-base group-hover:rotate-12 transition-transform" />
+              <span>View website source code</span>
+            </a>
+          </motion.div>
+
+          <motion.div
             className="flex justify-center gap-6 mb-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 0.8 }}
           >
             <motion.a
               href="https://github.com/mhattingpete"
@@ -198,7 +215,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
+            transition={{ delay: 1.0 }}
           >
             <a
               href="#research"

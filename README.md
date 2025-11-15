@@ -1,16 +1,33 @@
-# Martin Hatting Petersen - Portfolio Website
+# Martin Hatting Petersen - Portfolio Website 🚀
 
-A modern, cyberpunk-themed portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+[![Live Site](https://img.shields.io/badge/Live-mhattingpete.github.io-00f5ff?style=for-the-badge)](https://mhattingpete.github.io/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
 
-## Features
+A modern, cyberpunk-themed portfolio website showcasing AI engineering, LLM development, and agentic systems projects. Built with Next.js, TypeScript, and Tailwind CSS.
 
-- 🎨 Dark mode design with neon accents (cyan, purple, pink)
-- ⚡ Built with Next.js 14 and React 18
-- 🎭 Smooth animations using Framer Motion
-- 📱 Fully responsive design
-- 🚀 GitHub API integration for dynamic project showcase
-- 🎯 Optimized for performance and SEO
-- 🔒 Security-first development approach
+**🌐 Live Site:** [https://mhattingpete.github.io/](https://mhattingpete.github.io/)
+
+## ✨ Features
+
+- 🎨 **Cyberpunk Design**: Dark mode with neon accents (cyan, purple, pink) and animated particles
+- ⚡ **Modern Stack**: Built with Next.js 14, React 18, and TypeScript
+- 🎭 **Smooth Animations**: Framer Motion for elegant transitions and interactions
+- 📱 **Fully Responsive**: Optimized for all devices and screen sizes
+- 🚀 **Dynamic Projects**: GitHub API integration for real-time project showcase
+- 🎯 **SEO Optimized**: Meta tags and structured data for search engines
+- 🔒 **Security-First**: Following best practices and secure coding standards
+- 🌐 **Zero Config Deployment**: Automated GitHub Actions workflow
+- ♿ **Accessible**: WCAG compliant design
+
+## 🎯 About
+
+This portfolio website serves as a comprehensive showcase of my work in:
+- **AI Engineering**: Agentic systems, LLMOps, and multimodal AI
+- **Data Science**: Machine learning, deep learning, and data analysis
+- **Research**: Publications, talks, and academic contributions
+- **Open Source**: Contributions to major projects like LangChain, Langfuse, and MLflow
 
 ## Tech Stack
 
