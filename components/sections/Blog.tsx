@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { FaPenNib, FaExternalLinkAlt } from "react-icons/fa";
+import { FaPenNib, FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Blog() {
   const [ref, inView] = useInView({
@@ -40,7 +41,7 @@ export default function Blog() {
               <span className="gradient-text">Featured Write-ups</span>
             </h2>
             <p className="text-xl text-gray-300">
-              Deep dives into AI systems I've built
+              Deep dives into AI systems I&apos;ve built
             </p>
           </motion.div>
 
@@ -49,46 +50,50 @@ export default function Blog() {
               {
                 title: "Building a Claude Code Plugin Marketplace",
                 description:
-                  "A curated marketplace of Claude Code plugins for software engineering workflows — engineering, code operations, and document skills.",
-                url: "https://github.com/mhattingpete/claude-skills-marketplace",
+                  "How I built a plugin ecosystem for Claude Code with skills, agents, and a 97% token-saving execution runtime.",
+                slug: "building-claude-skills-marketplace",
+                readTime: "8 min read",
                 iconClass: "text-neon-cyan",
               },
               {
                 title: "Designing a Personal AI Operating System",
                 description:
-                  "Automate your digital life with natural language. Create automations by describing what you want in plain English.",
-                url: "https://github.com/mhattingpete/personal-ai-os",
+                  "Natural language automations, MCP-based integrations, and local-first LLM routing for personal productivity.",
+                slug: "designing-personal-ai-os",
+                readTime: "7 min read",
                 iconClass: "text-neon-purple",
               },
               {
                 title: "Multi-Agent AI System Design",
                 description:
-                  "A local-first platform for designing and interacting with multi-agent AI systems using the Agno framework and AG-UI protocol.",
-                url: "https://github.com/mhattingpete/agent-composer",
+                  "Building a local-first platform for multi-agent collaboration using Agno, AG-UI protocol, and OpenRouter.",
+                slug: "multi-agent-ai-system-design",
+                readTime: "6 min read",
                 iconClass: "text-neon-pink",
               },
             ].map((post) => (
-              <motion.a
-                key={post.title}
-                variants={itemVariants}
-                href={post.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="neon-card bg-dark-card rounded-lg p-6 flex flex-col group hover:scale-[1.02] transition-transform"
-              >
-                <div className={`${post.iconClass} text-2xl mb-4`}>
-                  <FaPenNib />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-neon-cyan transition-colors">
-                  {post.title}
-                </h3>
-                <p className="text-gray-400 text-sm mb-4 flex-1">
-                  {post.description}
-                </p>
-                <span className="text-neon-cyan text-sm flex items-center gap-2">
-                  Read on GitHub <FaExternalLinkAlt className="text-xs" />
-                </span>
-              </motion.a>
+              <Link key={post.slug} href={`/blog/${post.slug}/`} passHref legacyBehavior>
+                <motion.a
+                  variants={itemVariants}
+                  className="neon-card bg-dark-card rounded-lg p-6 flex flex-col group hover:scale-[1.02] transition-transform cursor-pointer"
+                >
+                  <div className={`${post.iconClass} text-2xl mb-4`}>
+                    <FaPenNib />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-neon-cyan transition-colors">
+                    {post.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-4 flex-1">
+                    {post.description}
+                  </p>
+                  <span className="text-sm text-gray-500 mb-3">
+                    {post.readTime}
+                  </span>
+                  <span className="text-neon-cyan text-sm flex items-center gap-2">
+                    Read write-up <FaArrowRight className="text-xs" />
+                  </span>
+                </motion.a>
+              </Link>
             ))}
           </div>
         </motion.div>
